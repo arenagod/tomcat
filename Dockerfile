@@ -19,3 +19,4 @@ RUN chmod 755 /usr/local/tomcat/bin -R
 
 EXPOSE 80 8080
 CMD ["bash", "catalina.sh", "run"]
+#docker build -t adorei/tomcat:latest .
