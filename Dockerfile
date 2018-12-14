@@ -15,7 +15,7 @@ RUN ["bash","-c","echo Asia/Shanghai > /etc/timezone && rm -f /etc/localtime && 
 
 
 COPY tomcat /usr/local/tomcat
-RUN chmod 777 /usr/local/tomcat/bin -R
+RUN chmod 755 /usr/local/tomcat/bin -R
 
 EXPOSE 80 8080
 CMD ["bash", "catalina.sh", "run"]
